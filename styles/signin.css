@@ -1,0 +1,52 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sign_box{
+    width:370px;
+    font-size: 17px;
+}
+#email,#password{
+    width:360px;
+    height:35px;
+    margin-bottom: 10px;
+}
+
+#sign_btn{
+    width:370px;
+    height:45px;
+    font-size:17px;
+    margin-top: 20px;
+    color: white;
+    background-color:rgb(57, 57, 94);
+    font-weight: bold;
+}
+#sign_btn:hover{
+    background-color:rgb(14, 14, 100)
+}
+#whole_in{
+    margin-top:10%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    display: flex;
+}
+#forgot{
+    color:rgb(92, 90, 90)
+}
+#tosign_up{
+width: 370px;
+padding-top:70px;
+line-height: 17px;
+margin-left: 20px;
+}
+#signup_btn{
+width:230px;
+    height:40px;
+    font-size:17px;
+    margin-top: 20px;
+    background-color: white;
+    font-weight: bold;
+    border: .5px solid black;
+}
+#signup-p{
+font-size:23px;
+}

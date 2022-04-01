@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/21c38a1c2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/main_cart.css">
+    <title>SHOP.COM - Online Shopping Marketplace: Cloths,Shoes,Beauty,Fashion...</title>
+</head>
+<body>
+    <div id="top"></div> 
+    <h1 id="cart_h">Your Cart</h1>
+    <hr>
+    <div id="main-cart">
+  
+        <div id="left_cart"></div>
+        <div id="right_cart">
+            <h1>Order Total</h1>
+            <hr>
+            <div class="final_bill">
+                <p id="mar-bi">Subtotal:</p>
+                <h3 id="mar-bi1">0</h3>
+            </div>
+            <div id="href-land"><a href="landing.html">Continue Shopping</a></div>
+            <div class="final_bill1">
+                <p class="bill">or 4 interest-free payments of</p>
+                <h3 id="biil">0</h3>
+                <p class="bill">with Sezzle ⓘ</p>
+            </div>
+            <div id="inpb-div">
+                <input class="inp-btn " type="number" placeholder="zip code">
+                <button class="inp-btn jj">Estimate Shipment</button>
+            </div>
+            <div>
+                <button id="proceed_c" onclick="checkout()">Proceed to Checkout</button>
+            </div>
+            <div id="id-check">
+                
+                <div id="p-check">
+                <h3 id="p-check1">Or checkout with:</h3>
+                    <div id="check_img">
+                        <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/ppcredit_MD_BNPOT_1x.png" alt="">
+                        <img id="sec-img" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-medium.png" alt="">
+                    </div>
+                    <img id="third_img" onclick="checkout()" src="https://src.mastercard.com/assets/img/btn/src_chk_btn_147x034px.svg?locale=en_us&paymentmethod=master,visa,discover,amex&checkoutid=a4a6w4v6h7cg0iaijxn0j1iaoelnus5936" alt="">
+                </div>
+            </div>
+        </div>
+ </div>
+    <div id="bottom"></div>
+</body>
+</html>
+<script type="module">
+    import navbar from "./components/navbar.js"
+    import footer from "./components/footer.js"
+    let nav = document.getElementById("top");
+    nav.innerHTML = navbar()
+  document.getElementById("homelogo").addEventListener("click",homePage)
+
+
+    function homePage(){
+        window.location.href="landing.html"
+    }
+
+
+
+    let foot = document.getElementById("bottom");
+    foot.innerHTML = footer()
+
+    document.getElementById("cart_sign").addEventListener("click",signinUp)
+
+function signinUp(){
+window.location.href="signin.html"
+}
+
+
+
+let userDetails = JSON.parse(localStorage.getItem("userDetails")) || null;
+let inner = document.getElementById("cart_sign")
+if(userDetails){
+
+    inner.innerText=`Hello ${userDetails.firstName}`;
+   
+}
+     </script>
+    <script src="./script/cart.js">
+
+     </script>

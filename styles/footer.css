@@ -1,0 +1,77 @@
+#footerFirst,#footerInner,#footerIcon,#footerFlex,#footerImage{
+    display:flex;
+   }
+   #footerFirst{
+       justify-content:space-between;
+       background-color:#545871 ;
+       color: white
+   }
+   .footer-img{
+       width:80px;
+       height:80px;
+   }
+   #footerImage{
+      margin-left: 23%;
+      width:800px;
+      justify-content: space-between;
+   } 
+   #seal{
+       margin-left:46%;
+       width:100px;
+       height:60px;
+       margin-top:20px
+   }
+   #footerSecond{
+       margin-bottom: 30px;
+       line-height:5px
+   }
+   #footer{
+      
+       background-color: rgb(240,241,247);
+   }
+   #footerSecond>#footerFlex{
+       width:600px;
+       justify-content: space-between;
+       color:black;
+       font-size: 14px
+   }
+   #footerIcon{
+       font-size: 25px;
+       padding-top: 15px;
+       padding-right: 10px;
+       justify-content: space-between;
+       width:170px;
+   }
+   #footerInner{
+       font-size:13px;
+       width:1000px;
+       justify-content: space-between;
+   } 
+   #footerInner>p{
+       font-size: 15px
+   }
+   #gmailFLex{
+       display:flex;
+       font-size:10px
+   }
+#footerInput{
+  height:15px;
+  padding-top:10px;
+  width: 200px
+
+}
+#footerbutton{
+  height: 30px;
+  
+}
+#footerh{
+  margin-right: 10px;
+  color:white
+}
+#footerGmail{
+background-color:#545871 ;
+padding-top: 10px;
+border-bottom: 1px solid white;
+}
+
+

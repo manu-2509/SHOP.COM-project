@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/21c38a1c2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/featured.css">  
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+    <title>SHOP.COM - Online Shopping Marketplace: Cloths,Shoes,Beauty,Fashion...</title>
+</head>
+<body>
+    <div id="cart-box">
+        <div id="carth">
+            <div id="cart-fix">
+                 <p id="carthead">Shopping Cart</p>
+            <i onclick="cartDis()" class="fa-regular fa-circle-xmark"></i> 
+            </div>   
+           <hr>
+           </div>
+           
+        <div id="itemcart"></div>
+     
+    </div>
+    <div id="cfix">
+       <div id="cart_bfix">
+           <h2 id="subtotal">Subtotal:</h2>
+           <h2 id="total_val">0</h2>
+       </div>
+       <div id="checkout_btn">
+           <button id="View_cart" onclick="viewCart()">View Cart/Checkout</button>
+           <button id="continue" onclick="cartDis()">Continue Shopping</button>
+       </div>
+      </div>
+    <div id="top"></div>
+    <div id="container">
+        <div id="f-cont">
+            <div id="inner-f"></div>
+            <div id="inner-f1"></div>
+        </div>
+        <h1 class="f-head1">We thought you may also like:</h1>
+        <div id="f-cont1">
+       
+    </div>
+    <h2 class="f-head1">Product Information</h2>
+    <hr>
+    </div>
+    <div id="f-cont2"></div>
+    <div id="bottom"></div>
+</body>
+</html>
+<script type="module">
+    import navbar from "./components/navbar.js"
+    import footer from "./components/footer.js"
+    let nav = document.getElementById("top");
+    nav.innerHTML = navbar()
+  document.getElementById("homelogo").addEventListener("click",homePage)
+
+
+    function homePage(){
+        window.location.href="landing.html"
+    }
+
+
+
+    let foot = document.getElementById("bottom");
+    foot.innerHTML = footer()
+
+
+    document.getElementById("cart_icons").addEventListener("click",cartUndo)
+
+ cb = document.getElementById("cart-box")
+     cfix = document.getElementById("cfix")
+    function cartUndo(){
+     cb.style.display = "block"
+     cfix.style.display = "block"
+}
+
+document.getElementById("cart_sign").addEventListener("click",signinUp)
+
+function signinUp(){
+window.location.href="signin.html"
+}
+
+
+
+
+
+let userDetails = JSON.parse(localStorage.getItem("userDetails")) || null;
+let inner = document.getElementById("cart_sign")
+if(userDetails){
+
+    inner.innerText=`Hello ${userDetails.firstName}`;
+   
+}
+</script>
+<script>
+
+  
+
+
+    feature = () => {
+        window.location.href="featured.html"
+    }
+
+</script>
+
+<script src="./script/single.js">
+
+</script>

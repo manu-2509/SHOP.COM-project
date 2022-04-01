@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/21c38a1c2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/checkout.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <title>SHOP.COM - Online Shopping Marketplace: Cloths,Shoes,Beauty,Fashion...</title>
+</head>
+
+<body>
+    <div id="top"></div>
+    <div>
+
+        <h1 id="tp-mar">Payment</h1>
+        <hr>
+        <div id="box">
+            <div>
+                <label id="label-no">Card Number:</label>
+                <input id="cred-1" type="number">
+            </div>
+            <div>
+                <label id="label-cvv">CVV:</label>
+                <input id="cred-2"  type="number">
+            </div>
+            <div>
+                <label>Card Holder Name:</label>
+                <input id="cred-3"  type="text">
+            </div>
+          <button onclick="payment()" id="checkout-btn">Pay</button>
+        </div>
+    </div>
+    <h2 id="transaction">Please wait for sometime..Your transaction is proceeding</h2>
+
+    <div id="bottom"> </div>
+</body>
+</html>
+<script src="./script/checkout.js">
+    
+
+
+</script>
+<script type="module">
+    import navbar from "./components/navbar.js"
+    import footer from "./components/footer.js"
+    let nav = document.getElementById("top");
+    nav.innerHTML = navbar()
+    document.querySelector("#homelogo").addEventListener("click",homePage)
+
+
+function homePage(){
+    window.location.href="landing.html"
+}
+
+
+
+
+    let foot = document.getElementById("bottom");
+    foot.innerHTML = footer()
+
+    document.getElementById("cart_sign").addEventListener("click",signinUp)
+
+function signinUp(){
+window.location.href="signin.html"
+}
+
+
+let userDetails = JSON.parse(localStorage.getItem("userDetails")) || null;
+let inner = document.getElementById("cart_sign")
+if(userDetails){
+
+    inner.innerText=`Hello ${userDetails.firstName}`;
+   
+}
+</script>

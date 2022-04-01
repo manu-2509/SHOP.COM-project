@@ -1,0 +1,118 @@
+.cart-dollar{
+    width:20px;
+    height:20px;
+    padding-top: 10px;
+}
+#main-cart{
+    display:flex;
+    justify-content:space-between;
+   
+}
+.cart-divv{
+    width:240px;
+    line-height:15px;
+}    
+.cart-Iimg{
+    width: 100px;
+    height: 100px;
+}
+.btn-cart{
+    padding:10px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.cart-div1{
+    line-height: 5px;
+}
+.itemname-c{
+    line-height:15px;
+}
+.final_bill{
+    display: flex;
+    justify-content:space-between
+    
+}
+#right_cart{
+    width:600px;
+    background-color:rgb(240,241,247)
+}
+.final_bill1{
+    display: flex;
+    justify-content:flex-end
+    
+}
+#mar-bi{
+    margin-left:100px;
+    font-size:20px;
+}
+.bill{
+    font-size: 20px;
+
+}
+#biil{
+    margin-left:5px;
+    margin-right: 5px;
+}
+.inp-btn{
+    height:40px;
+    width:80px;
+}
+.jj{
+    font-size:15px;
+    height:45px;
+    padding:0px 20px;
+    width:190px;
+    margin-left: 10px;
+}
+#inpb-div{
+    margin-left:290px;
+    padding:5px;
+    background-color:white
+}
+#cart_h{
+    margin-top:130px;
+}
+#proceed_c{
+    margin-left:370px;
+    width:220px;
+    font-size:16px;
+    height: 50px;
+    background-color:rgb(35, 35, 80);
+    color:white;
+    margin-top:10px;
+}
+#proceed_c:hover,.jj:hover{
+background-color: rgb(6, 6, 97);
+color:white;
+}
+#p-check{
+    background-color:white;
+    border:1px solid rgb(170, 170, 170);
+}
+#check_img{
+    display:flex;
+    margin-left:145px;
+
+}
+#check_img>img{
+    margin-left:10px;
+}
+#sec-img{
+    height:30px;
+}
+#third_img{
+    margin-left:320px;
+}
+#p-check1{
+    width:150px;
+    background-color:white;
+  
+}
+#id-check{
+    background-color:rgb(240,241,247);
+    padding:30px;
+    
+}
+#href-land{
+    margin-left: 460px;
+}

@@ -1,0 +1,93 @@
+#container{
+    margin-top:120px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(28, 46, 46);
+}
+#sortfn{
+    display: flex;
+}
+#select-sort{
+    border: none;
+    font-weight: bold;
+}
+#side_div{
+    width:250px;
+}
+.item1,.item-flexside{
+    display: flex;
+    font-size:15px
+}
+#feed-input{
+    height:250px;
+    width:200px
+}
+#feed-sub{
+    margin-top: 10px;
+    width:150px;
+    height:30px;
+    margin-bottom:10px;
+    margin-left: 10%
+}
+#feedback{
+    background-color:whitesmoke;
+    padding:10px
+}
+#one_cimg{
+    width:100px;
+    height:30px;
+    padding-top: 10px;
+}
+#OneCart{
+    display: flex;
+}
+#item_div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    padding: 20px
+}
+#full_div{
+    display:flex;
+
+}
+.prd-simg{
+    padding-top:7px
+}
+.prd-menimg{
+    padding:10px;
+    line-height:0px;
+    width: 380px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(218, 222, 226) 0px 0px 0px 1px inset;
+}
+.prd-menimg:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.nameClass{
+    line-height:18px;
+    font-weight:lighter;
+    font-size:20px;
+}
+.prd-sdimg{
+    width:380px
+}
+.btn-prd{
+    background-color: whitesmoke;
+    color:rgb(28, 46, 46);
+    border: 1px solid rgb(201, 201, 201);
+    font-weight: bold;
+}
+.btn-prd:hover{
+    background-color: rgb(219, 219, 219);
+    color:rgb(0, 0, 0);
+    
+}
+.btn1-prd{
+    background-color: rgb(47, 53, 79);
+    color:white;
+    border: none;
+    font-weight: bold;
+}
+.btn1-prd:hover{
+    background-color: rgb(13, 23, 68);
+    color:white;
+}

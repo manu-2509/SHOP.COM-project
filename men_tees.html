@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/21c38a1c2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/men_tees.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+    <title>SHOP.COM - Online Shopping Marketplace: Cloths,Shoes,Beauty,Fashion...</title>
+</head>
+<body>
+    <div id="cart-box">
+        <div id="carth">
+            <div id="cart-fix">
+                 <p id="carthead">Shopping Cart</p>
+            <i onclick="cartDis()" class="fa-regular fa-circle-xmark"></i> 
+            </div>   
+           <hr>
+           </div>
+           
+        <div id="itemcart"></div>
+     
+    </div>
+    <div id="cfix">
+       <div id="cart_bfix">
+           <h2 id="subtotal">Subtotal:</h2>
+           <h2 id="total_val">0</h2>
+       </div>
+       <div id="checkout_btn">
+           <button id="View_cart" onclick="viewCart()">View Cart/Checkout</button>
+           <button id="continue" onclick="cartDis()">Continue Shopping</button>
+       </div>
+      </div>
+    <div id="top"></div>
+    <div id="container">
+        <div id="sortfn">
+            <p>Sort:</p>
+            <select id="select-sort" onchange="handleSort()">
+                <option  value="Best Match">Best Match</option>
+                <option  value="High">Price High-Low</option>
+                <option  value="Low">Price Low-High</option>
+                <option  value="Most Cashback">Most Cashback</option>
+                
+            </select>
+        </div>
+        <hr>
+        <div id="full_div">
+            <div id="side_div">
+                <div id="OneCart">
+                    <input type="checkbox">
+                    <img id="one_cimg" src="https://img.shop.com/Image/resources/images/onecart-logo_icon.svg" alt="">
+                    <p>(12,638)</p>
+                </div>
+                <hr>
+                <div id="Sales_item">
+                  <div class="item1">
+                      <input type="checkbox">
+                      <p>Sale Items(9,553)</p>
+                  </div>
+                  <div class="item1">
+                    <input type="checkbox">
+                    <p>Shipping Offers(10,288)</p>
+                </div>
+                </div>
+                <hr>
+                <div>
+                    <p>Men's T-Shirt Types   <i class="fa-solid fa-angle-down"></i></p>
+                <hr>
+                    <p>Color     <i class="fa-solid fa-angle-down"></i></p>
+                <hr>
+                    <p>Fabric <i class="fa-solid fa-angle-down"></i></p>
+                <hr>
+                    <p>Size  <i class="fa-solid fa-angle-down"></i></p>
+                <hr>
+                    <p>Men's Sleeve Length  <i class="fa-solid fa-angle-down"></i></p>
+                <hr>
+                    <p>Special Size  <i class="fa-solid fa-angle-down"></i></p>
+                <hr>
+                    <p>Brand  <i class="fa-solid fa-angle-down"></i></p>
+                <hr>
+                    <p>Store  <i class="fa-solid fa-angle-down"></i></p>
+                <hr>
+                <p>Price Range  <i class="fa-solid fa-angle-down"></i></p>  
+                </div>
+                <div id="feedback">
+                    <p>Tell us how we are doing</p>
+                     <p>We constantly strive to improve the customer experience and we value your feedback.</p>
+                <input id="feed-input" type="text" placeholder="Enter feedback here."/>
+                <input id="feed-sub" type="submit" value="Submit feedback"/>
+                 </div>
+
+            </div>
+            <div id="item_div"></div>
+        </div>
+    </div>
+    <div id="bottom"></div>
+</body>
+</html>
+<script type="module">
+    import navbar from "./components/navbar.js"
+    import footer from "./components/footer.js"
+    let nav = document.getElementById("top");
+    nav.innerHTML = navbar()
+  document.getElementById("homelogo").addEventListener("click",homePage)
+
+
+    function homePage(){
+        window.location.href="landing.html"
+    }
+
+
+
+    let foot = document.getElementById("bottom");
+    foot.innerHTML = footer()
+
+
+    document.getElementById("cart_icons").addEventListener("click",cartUndo)
+
+ cb = document.getElementById("cart-box")
+     cfix = document.getElementById("cfix")
+    function cartUndo(){
+     cb.style.display = "block"
+     cfix.style.display = "block"
+}
+
+document.getElementById("cart_sign").addEventListener("click",signinUp)
+
+function signinUp(){
+window.location.href="signin.html"
+}
+
+
+
+let userDetails = JSON.parse(localStorage.getItem("userDetails")) || null;
+let inner = document.getElementById("cart_sign")
+
+if(userDetails){
+
+    inner.innerText=`Hello ${userDetails.firstName}`;
+   
+}
+</script>
+
+
+  
+<script src="./script/men_tees.js">
+
+    </script>
