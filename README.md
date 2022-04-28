@@ -1,4 +1,4 @@
-<span><h1>SHOP.COM Clone-</h1>[https://www.shop.com//]</span>
+<h1>SHOP.COM Clone-[https://www.shop.com//]</h1>
 <img src="" alt=""></img>
 <img src="" alt=""></img>
 <img src="" alt=""></img>
